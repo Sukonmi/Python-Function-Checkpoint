@@ -37,22 +37,27 @@ def calculator():
             break
         if user_selection == "+":
             calculation_function = operations["+"]
-            result = add(first_number,second_number)
-            print(f"{first_number}+{second_number} = {result}")
+            sum_answer = add(first_number,second_number)
+            print(f"{first_number}+{second_number} = {sum_answer}")
         elif user_selection == "-":
             calculation_function = operations["-"]
-            result = subtract(first_number,second_number)
-            print(f"{first_number}-{second_number} = {result}")
+            subtraction_answer = subtract(first_number,second_number)
+            print(f"{first_number}-{second_number} = {subtraction_answer}")
         elif user_selection == "*":
             calculation_function = operations["*"]
-            result = multiply(first_number,second_number)
-            print(f"{first_number}*{second_number} = {result}")
+            mult_answer = multiply(first_number,second_number)
+            print(f"{first_number}*{second_number} = {mult_answer}")
         elif user_selection == "/":
             calculation_function = operations["/"]
-            result = divide(first_number,second_number)
-            print(f"{first_number}/{second_number} = {result}")
+            div_answer = divide(first_number,second_number)
+            print(f"{first_number}/{second_number} = {div_answer}")
         else:
             print("This operation is not available. Try any of the following(+,-,*,/)")
+            break
     # Ask the user if they would like to continue using the result as the first number for further calculations.
-
+        user_choice = input("Would you like to continue? yes/no: \n").lower()
+        if user_choice == "yes":
+            sum_answer
+    # If the user chooses to continue, update the 'num1' variable to the value of 'answer'.
+    # If the user chooses to start a new calculation, set the 'should_continue' variable to false and call the 'calculator' function to start a new calculation.
 calculator()
