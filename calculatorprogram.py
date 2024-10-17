@@ -12,7 +12,7 @@ def multiply(a,b):
 def divide(a,b):
     # Handle division by zero
     if b == 0:
-        return "Error, you can't use zero"
+        return "Error!. You can't use zero"
     return a/b
 
 # Create a dictionary 'operations' that assigns the functions to their corresponding operation symbols.
